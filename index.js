@@ -7,12 +7,12 @@ const app = express();
 app.use(bodyParser.json());
 
 // Configure AWS SDK
-AWS.config.update({ region: 'us-east-1' }); // Replace with your region
+AWS.config.update({ region: 'eu-central-1' }); // Replace with your region
 const lexruntime = new AWS.LexRuntime();
 
 // Environment variables for bot configuration
-const BOT_NAME = 'YourBotName'; // Replace with your Lex bot name
-const BOT_ALIAS = 'YourBotAlias'; // Replace with your Lex bot alias
+const BOT_NAME = 'PocketLawyer'; // Replace with your Lex bot name
+const BOT_ALIAS = 'TestBotAlias'; // Replace with your Lex bot alias
 
 // POST endpoint to handle user messages
 app.post('/chat', (req, res) => {
