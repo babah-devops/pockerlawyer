@@ -1,0 +1,14 @@
+{
+    "name": "lex-chat-app",
+    "version": "1.0.0",
+    "description": "A simple chat application integrated with Amazon Lex",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "aws-sdk": "^2.1495.0",
+      "body-parser": "^1.20.2"
+    }
+  }
